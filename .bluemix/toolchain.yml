@@ -16,6 +16,7 @@ catalog-api-repo:
     repo_url: "{{github.parameters.catalog-api-repo_url}}"
     type: clone
     has_issues: true
+  hidden: [form, description]    
 
 # Pipelines
 catalog-api-build:
@@ -37,7 +38,7 @@ catalog-api-build:
       PROD_SPACE_NAME: "{{deploy.parameters.prod-space}}"
       PROD_ORG_NAME: "{{deploy.parameters.prod-organization}}"
       PROD_REGION_ID: "{{deploy.parameters.prod-region}}"
-    hidden: [form, description]
+  hidden: [form, description]
     
 #Timeline Analytics
 events:
