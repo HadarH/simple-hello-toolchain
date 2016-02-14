@@ -37,7 +37,8 @@ catalog-api-build:
       PROD_SPACE_NAME: "{{deploy.parameters.prod-space}}"
       PROD_ORG_NAME: "{{deploy.parameters.prod-organization}}"
       PROD_REGION_ID: "{{deploy.parameters.prod-region}}"
-
+    hidden: [form, description]
+    
 #Timeline Analytics
 events:
   service_id: timeline
