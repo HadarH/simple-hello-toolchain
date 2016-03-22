@@ -10,7 +10,7 @@
         },
         "catalog-api-repo_url": {
             "type": "string"
-        },
+        }
     },
     "required": ["catalog-api-repo_name", "catalog-api-repo_url"],
     "form": [
