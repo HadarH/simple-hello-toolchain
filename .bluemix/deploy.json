@@ -17,36 +17,12 @@
             "description": "The bluemix space",
             "type": "string"
         },
-        "qa-region": {
-            "description": "The bluemix region",
-            "type": "string"
-        },
-        "qa-organization": {
-            "description": "The bluemix org",
-            "type": "string"
-        },
-       "qa-space": {
-            "description": "The bluemix space",
-            "type": "string"
-        },
-        "prod-region": {
-            "description": "The bluemix region",
-            "type": "string"
-        },
-        "prod-organization": {
-            "description": "The bluemix org",
-            "type": "string"
-        },
-       "prod-space": {
-            "description": "The bluemix space",
-            "type": "string"
-        },
-       "catalog-app-name": {
+       "hello-app-name": {
             "description": "catalog app name",
             "type": "string"
         }
     },
-    "required": ["dev-region", "dev-organization", "dev-space", "qa-region", "qa-organization", "qa-space", "prod-region", "prod-organization", "prod-space", "hello-app-name"],
+    "required": ["dev-region", "dev-organization", "dev-space",  "hello-app-name"],
     "form": [
        {
           "type": "validator",
@@ -55,8 +31,8 @@
         {
           "type": "text",
           "readonly": true,
-          "title": "Catalog App Name",
-          "key": "catalog-app-name"
+          "title": "Hello App Name",
+          "key": "hello-app-name"
         },
         {
             "type": "table",
@@ -96,40 +72,6 @@
                   "key": "dev-space",
                   "readonly": false
                 },
-                {
-                  "type": "label",
-                  "title": "Test Stage"
-                },
-                {
-                  "type": "select",
-                  "key": "qa-region"
-                },
-                {
-                  "type": "select",
-                  "key": "qa-organization"
-                },
-                {
-                  "type": "select",
-                  "key": "qa-space",
-                  "readonly": false
-                },
-                {
-                  "type": "label",
-                  "title": "Prod Stage"
-                },
-                {
-                  "type": "select",
-                  "key": "prod-region"
-                },
-                {
-                  "type": "select",
-                  "key": "prod-organization"
-                },
-                {
-                  "type": "select",
-                  "key": "prod-space",
-                  "readonly": false
-                }
             ]
         }
     ]
