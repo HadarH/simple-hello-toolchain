@@ -1,14 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Hello World",
-    "description": "Hello  GitHub Schema",
+    "description": "Hello GitHub Schema",
     "longDescription": "The GitHub Service allows you to create or use an existing GitHub repository to store your source code.",
     "type": "object",
     "properties": {
-        "catalog-api-repo_name": {
+        "hello-repo_name": {
             "type": "string"
         },
-        "catalog-api-repo_url": {
+        "hello-repo_url": {
             "type": "string"
         }
     },
