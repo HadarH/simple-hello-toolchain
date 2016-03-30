@@ -6,19 +6,16 @@ stages:
     branch: master
     url: ${GIT_REPO_URL}
     token: ${GIT_REPO_TOKEN}
-    dir_name: null
   triggers:
   - type: commit
   jobs:
   - name: Build
     type: builder
-    artifact_dir: ''
 - name: DEV
   inputs:
   - type: job
     stage: BUILD
     job: Build
-    dir_name: null
   triggers:
   - type: stage
   properties:
